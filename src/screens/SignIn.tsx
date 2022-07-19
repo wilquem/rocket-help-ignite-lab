@@ -8,7 +8,7 @@ import Logo from '../assets/logo_primary.svg';
 import { Input } from '../components/Input';
 import { Button } from '../components/Button';
 
-export default function SignIn() {
+export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -33,7 +33,9 @@ export default function SignIn() {
           onChangeText={setPassword}
           secureTextEntry
         />
-        <Button title='Entrar' w="full"/>
+        <Button title='Entrar' w="full"
+        />
     </VStack>
+
   )
 }
